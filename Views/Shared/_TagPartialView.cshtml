@@ -1,0 +1,10 @@
+﻿@*
+
+*@
+
+@foreach (var item in Model.Split(","))
+{
+	<li class="d-inline p-2">
+	<a asp-controller="Home" asp-action="Index" asp-route-id="@item">@item</a>
+	</li>
+}
